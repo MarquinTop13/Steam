@@ -66,6 +66,8 @@ main {
     margin-top: 8px;
     border-radius: 20px ;
     margin-left: 10px ;
+    border: 3px solid rgba(0,0,0,0.6);    
+
 }
 
 
@@ -73,6 +75,18 @@ main {
 .link2 { color: #eaeaea; }
 
 section { margin-left: 10px; }
+
+.cartaog{
+    transition: 0.3s;
+}
+
+.cartaog:hover { 
+    transform: scale(1.05);
+    border: 3px solid rgba(0,0,0,0.6);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5), 0 -4px 8px rgba(0,0,0,0.3);
+    transform: scale(1.05); 
+}
+
 
 footer {
     width: 100%;
