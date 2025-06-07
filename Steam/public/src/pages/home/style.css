@@ -1,0 +1,124 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #1e1e2f;
+    color: #eaeaea;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: #37374bd5;
+    border: 3.25px solid black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.link3{
+    color: #eaeaea;
+}
+
+main {
+    max-width: 1024px;
+    width: 100%;
+    
+}
+
+nav{
+    display: flex;
+    margin-right: 52px;
+    gap: 50px;    
+    
+}
+
+.cartoes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cartaog, .grande, .grande3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.cartaog:hover, .grande:hover, .grande3:hover { transform: scale(1.05); }
+
+.imgta, .imagemg, .imagemp {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.imgta { width: 570px; height: 305px; border-radius: 50px; }
+.imgta:hover, .imagemg:hover, .imagemp:hover {
+    border: 3px solid rgba(0,0,0,0.6);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.5), 0 -4px 8px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+.imagemg { width: 470px; height: 250px; }
+.imagemp { width: 220px; height: 130px; }
+
+.pequeno {
+    width: 250px; height: 150px;
+    transition: 0.5s;
+}
+.pequeno:hover { transform: scale(1.05); }
+
+.descricao, .descricao2 { display: flex; flex-direction: column; }
+
+.total1, .total2 { width: 500px; margin: 5px; }
+
+.div2baixo, .div2cima { display: flex; margin-top: 15px; }
+
+.grande3{
+    margin-top: 35px;
+    margin-right: 20px;
+    transition: 500ms;
+}
+
+.grande3:hover {
+    transform: scale(1.05);
+}
+
+.link { color: #07f807c0; }
+.link2 { color: #eaeaea; }
+
+section { margin-left: 10px; }
+h2 { margin: 20px 0 20px 150px; text-shadow: 1px 0 10px #ff9900e5; }
+p { color: #08f808; }
+
+footer {
+    width: 100%;
+    background: #1e1e2f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 479px) {
+    
+    body { max-width: 479px; flex-wrap: wrap; }
+    main { max-width: auto;}
+    .cartoes, .cartaog, .div2cima, .div2baixo {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .imgta, .imagemg, .imagemp, .pequeno {
+        width: 320px; max-width: 320px; height: auto; margin: 10px 0;
+    }
+    .descricao { margin-top: 20px; }
+
+    header{
+        max-width: auto;
+    }
+}
